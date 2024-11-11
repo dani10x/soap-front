@@ -1,0 +1,23 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>
+      Parqueaderos Disponibles
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-tree [dataSource]="xmlTreeData">
+  <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+    <li>
+      <div class="mat-tree-node">
+        {{node.name}}: {{node.value || ''}}
+      </div>
+    </li>
+  </mat-tree-node>
+
+  <mat-nested-tree-node>
+    <li>
+    </li>
+  </mat-nested-tree-node>
+</mat-tree>
+  </mat-card-content>
+</mat-card>

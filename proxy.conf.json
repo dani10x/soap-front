@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://soap-pdyp.oa.r.appspot.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
